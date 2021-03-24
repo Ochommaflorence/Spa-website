@@ -277,14 +277,137 @@ ul, li, ol{
 	border: 2px solid #cd96c9;
 }
 
+/* PAMTEL css styling */
+/* GALLERY */
+.hero-section {
+	height: 80vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6) url('../images/stone_flower2.png');
+	background-position: center;
+    background-size: cover;
+	background-blend-mode: overlay;
+	font-family: 'Rubik', sans-serif;
+}
+.b_details {
+	background: url('../images/bg-1.png');
+	background-position: center;
+    position: absolute;
+	width: 100%;
+	height: 80vh;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+.g-image {
+	width: 381px;
+	height: 200px;
+}
+hr {
+	width: 10%;
+	background-color: #cd96c9;
+	margin-top: 5px;
+	height: 3px;
+}
 
+/* SERVICE */
+.service-hero {
+	height: 80vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6) url('../images/service-hero.jpg');
+	background-position: center;
+    background-size: cover;
+	background-blend-mode: overlay;
+	font-family: 'Rubik', sans-serif;
+	display: flex;
+	align-items: center;
+}
 
+/* service card */
+.service-card{
+	background-color: #f8f9fa;
+}
+.single-plan{
+    text-align: center;
+    background: #262626;
+    margin-top: 20px;
+    transition: 0.7s;
+}
 
+.single-plan h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-transform: uppercase;
+}
 
+.single-plan h4{
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+}
 
+.single-plan span{
+    font-size: 30px;
+    margin-left: -5px;
+}
 
+.single-plan h5{
+    color: #fff;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
 
+.deal-top{
+    position: relative;
+    background: #cd96c9;
+    font-size: 16px;
+    padding: 136px 24px 0;
+    border-radius: 0px 0px 100px 0px;
+}
 
+.deal-bottom{
+    padding: 56px 16px 0;
+}
 
+.deal-bottom ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 
+.deal-bottom ul li{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 13px;
+    border-top: 1px solid #ddd;
+    padding-top: 16px;
+}
 
+.btn-area a{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #cd96c9;
+    padding: 8px 24px;
+    margin-top: 32px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.single-plan:hover{
+    background: #cd96c9;
+}
+
+.single-plan:hover .deal-top{
+    background: #262626;
+}
+
+.single-plan:hover .btn-area a{
+    background: #262626;
+}
