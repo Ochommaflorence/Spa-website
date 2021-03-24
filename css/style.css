@@ -278,6 +278,91 @@ ul, li, ol{
 }
 
 
+/*------------------------------------------------------------------
+    Footer godswill branch
+-------------------------------------------------------------------*/
+footer {
+	margin-top: 30px;
+	height: 90vh;
+	width: 100%;
+	background: url("../images/footer-bg.jpg");
+	background-position: center center;
+	background-size: cover;
+	
+}
+
+.footer-overlay {
+	height: 90vh;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+footer h2 {
+	color: #fff;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+
+footer ul a {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 17px;
+	padding-left: 1.600rem;
+}
+
+footer ul a:hover {
+	color: #cd96c9;
+	
+}
+
+@media(max-width: 320px) {
+	footer ul a {
+		font-size: 13px;
+		
+	}
+}
+
+.footer-social a{
+	display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 161, 136, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #cd96c9;
+	font-size: 20px;
+	margin-left: 5px;
+	transition: .3s all ease;
+}
+
+.footer-social a:hover {
+	background: #fff;
+}
+
+.footer-b {
+	margin-top: -6rem;
+}
+
+.footer-b a {
+	font-weight: 400;
+	text-decoration: underline !important;
+	color: #cd96c9;
+	font-size: 17px;
+}
+
+footer hr {
+	background: grey;
+}
+
+footer p {
+	color: #fff;
+	font-size: 14px;
+	padding-top: 0.625rem;
+	letter-spacing: 0.7px;
+}
+
 
 
 
