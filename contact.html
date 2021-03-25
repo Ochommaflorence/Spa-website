@@ -1,59 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-     <!-- Site Metas -->
-     <title>Contact-us page</title>  
-     <meta name="keywords" content="">
-     <meta name="description" content="">
-     <meta name="author" content="">
- 
-     <!-- Site Icons -->
-     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
- 
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="css/bootstrap.min.css">    
-     <!-- Site CSS -->
-     <link rel="stylesheet" href="css/style.css">    
-     <!-- Responsive CSS -->
-     <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
+    <!-- Site Metas -->
+    <title>Contact-us page</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
     <!-- Start header -->
-	<header class="top-navbar">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="images/logo.png" alt="" />
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-				  <span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbars-rs-food">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
-						<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-						<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-						<li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
+    <header class="top-navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbars-rs-food"
+            aria-controls="navbars-rs-food"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbars-rs-food">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- End header -->
+    <!-- main starts -->
+    <section>
+      <div class="Hero-section">
+        <div class="container">
+          <div class="Hero-content">
+            <h1 class="font-weight-bold h1">Contact Us</h1>
+          </div>
+        </div>
+      </div>
 
+      <div class="container">
+        <div class="contact-content">
+          <h1 class="mt-5 font-weight-bold h1 text-center text-dark">
+            Get In Touch
+          </h1>
+          <hr />
+        </div>
+        <form action="/action_page.php ">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Country</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="australia">Nigeria</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="usa">UK</option>
+                <option value="usa">Brazil</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit" class="form-button" />
+          </div>
+        </form>
+      </div>
+
+      <div class="container mb-5 text-left">
+        <div class="contact-content">
+          <h1 class="mt-5 font-weight-bold h2 text-center text-dark">
+            Contact Information
+          </h1>
+          <hr />
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="contact-content">
+              <h3 class="font-weight-bold text-dark">About us</h3>
+              <p>
+                Come in and our thrapists provide the perfect treatment. Our
+                massage is specially designed to help to achieve you the perfect
+                mind-body
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-content">
+              <h3 class="font-weight-bold text-dark">Open hours</h3>
+              <ul>
+                <li>Mon-fri: 9AM - 6PM</li>
+                <li>Saturday:9AM - 4PM</li>
+                <li>Sunday:Closed</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-content">
+              <h3 class="font-weight-bold text-dark">Contacts</h3>
+              <ul>
+                <li>Jesan House lekki Epe Expressway, Oko Addo, Ajah Lagos</li>
+                <li>
+                  <a href="tel: +234 703 664 8787">
+                    +234 903 896 8345
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto: elvischizzy09@gmail.com">
+                    elvischizzy09@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- main ends -->
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+    <!-- Footer -->
+    <footer>
+		<div class="footer-overlay text-center">
+		  <div
+			class="d-flex justify-content-center align-items-center container"
+			style="height: 90%;"
+		  >
+			<div class="footer-content">
+			  <h2>GmaSpa</h2>
+			  <ul class="d-flex flex-wrap mt-4">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./services.html">Services</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			  </ul>
+  
+			  <div class="footer-social d-flex justify-content-center mt-4">
+				<a href="#"><i class="fa fa-facebook-f"></i> </a>
+				<a href="#"> <i class="fa fa-twitter"></i></a>
+				<a href="#"> <i class="fa fa-youtube"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i> </a>
+			  </div>
+			</div>
+		  </div>
+		  <div class="container footer-b">
+			<hr />
+			<p>
+			  Copyright ©2021 All rights reserved | This template is made by
+			  <a href="https://godswill-portfolio.netlify.app/" target="blank"
+				>Godswill Team</a
+			  >
+			</p>
+		  </div>
+		</div>
+	  </footer>
     
     	<!-- ALL JS FILES -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
     <!-- ALL PLUGINS -->
-	<script src="js/jquery.superslides.min.js"></script>
-	<script src="js/images-loded.min.js"></script>
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
     <script src="js/custom.js"></script>
-    </body>
-    </html>
+  </body>
+</html>
