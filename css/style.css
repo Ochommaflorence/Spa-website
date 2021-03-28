@@ -342,7 +342,7 @@ hr {
 /* service card */
 .service-card{
 	background-color: #f8f9fa;
-	margin-bottom: -30px;
+	margin-bottom: -25px;
 }
 .single-plan{
     text-align: center;
@@ -470,24 +470,6 @@ hr {
 	animation-duration: 3s;
 	animation-name: slidein;
 }
-
-@keyframes slidein {
-	from {
-	  margin-left: 100%;
-	  width: 200%;
-	}
-  
-	75% {
-	  font-size: 200%;
-	  margin-left: 25%;
-	  width: 150%;
-	}
-  
-	to {
-	  margin-left: 0%;
-	  width: 100%;
-	}
-  }
 
 hr {
 	width: 10%;
@@ -621,8 +603,11 @@ footer h2 {
 	font-size: 30px;
 }
 
+
 footer ul a {
-	color: white;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 17px;
+	padding-left: 1.600rem;
 }
 
 footer ul a:hover {
